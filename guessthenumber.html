@@ -30,7 +30,7 @@
     	 if (userGuess > randomNumber){
             chances--
             if (chances > 0){
-    	 	document.getElementById("message").innerHTML = "Number too high!"
+    	 	document.getElementById("message").innerHTML = "The number is smaller than "+userGuess+ ". You have "+chances+ " chances left."
     	 }
     	 else {
     	 	document.getElementById("message").innerHTML = "Number too high,Sorry you lose.The number is "+
@@ -42,7 +42,7 @@
     	 else if(userGuess<randomNumber){
     	 	chances--
     	 	if (chances > 0){
-    	 	document.getElementById("message").innerHTML = "Number too low!! Try again!!"
+    	 	document.getElementById("message").innerHTML = "The number is bigger than "+userGuess+ ". You have "+chances+ " chances left."
     	 }
     	 else {
     	 	document.getElementById("message").innerHTML = "Number too low,Sorry you lose.The number is "+
